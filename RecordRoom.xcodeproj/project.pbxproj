@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		97FAF4942A4DED650025CAC7 /* RecordRoomApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FAF4932A4DED650025CAC7 /* RecordRoomApp.swift */; };
+		97FAF4962A4DED650025CAC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FAF4952A4DED650025CAC7 /* ContentView.swift */; };
+		97FAF4982A4DED680025CAC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97FAF4972A4DED680025CAC7 /* Assets.xcassets */; };
+		97FAF49B2A4DED680025CAC7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97FAF49A2A4DED680025CAC7 /* Preview Assets.xcassets */; };
+		97FAF4A52A4DED680025CAC7 /* RecordRoomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FAF4A42A4DED680025CAC7 /* RecordRoomTests.swift */; };
+		97FAF4AF2A4DED680025CAC7 /* RecordRoomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FAF4AE2A4DED680025CAC7 /* RecordRoomUITests.swift */; };
+		97FAF4B12A4DED680025CAC7 /* RecordRoomUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FAF4B02A4DED680025CAC7 /* RecordRoomUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		97FAF4A12A4DED680025CAC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97FAF4882A4DED650025CAC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97FAF48F2A4DED650025CAC7;
+			remoteInfo = RecordRoom;
+		};
+		97FAF4AB2A4DED680025CAC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97FAF4882A4DED650025CAC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97FAF48F2A4DED650025CAC7;
+			remoteInfo = RecordRoom;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		97FAF4902A4DED650025CAC7 /* RecordRoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecordRoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97FAF4932A4DED650025CAC7 /* RecordRoomApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordRoomApp.swift; sourceTree = "<group>"; };
+		97FAF4952A4DED650025CAC7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		97FAF4972A4DED680025CAC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97FAF49A2A4DED680025CAC7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		97FAF4A02A4DED680025CAC7 /* RecordRoomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecordRoomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		97FAF4A42A4DED680025CAC7 /* RecordRoomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordRoomTests.swift; sourceTree = "<group>"; };
+		97FAF4AA2A4DED680025CAC7 /* RecordRoomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecordRoomUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		97FAF4AE2A4DED680025CAC7 /* RecordRoomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordRoomUITests.swift; sourceTree = "<group>"; };
+		97FAF4B02A4DED680025CAC7 /* RecordRoomUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordRoomUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97FAF48D2A4DED650025CAC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97FAF49D2A4DED680025CAC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97FAF4A72A4DED680025CAC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		97FAF4872A4DED650025CAC7 = {
+			isa = PBXGroup;
+			children = (
+				97FAF4922A4DED650025CAC7 /* RecordRoom */,
+				97FAF4A32A4DED680025CAC7 /* RecordRoomTests */,
+				97FAF4AD2A4DED680025CAC7 /* RecordRoomUITests */,
+				97FAF4912A4DED650025CAC7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		97FAF4912A4DED650025CAC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97FAF4902A4DED650025CAC7 /* RecordRoom.app */,
+				97FAF4A02A4DED680025CAC7 /* RecordRoomTests.xctest */,
+				97FAF4AA2A4DED680025CAC7 /* RecordRoomUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97FAF4922A4DED650025CAC7 /* RecordRoom */ = {
+			isa = PBXGroup;
+			children = (
+				97FAF4932A4DED650025CAC7 /* RecordRoomApp.swift */,
+				97FAF4952A4DED650025CAC7 /* ContentView.swift */,
+				97FAF4972A4DED680025CAC7 /* Assets.xcassets */,
+				97FAF4992A4DED680025CAC7 /* Preview Content */,
+			);
+			path = RecordRoom;
+			sourceTree = "<group>";
+		};
+		97FAF4992A4DED680025CAC7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				97FAF49A2A4DED680025CAC7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		97FAF4A32A4DED680025CAC7 /* RecordRoomTests */ = {
+			isa = PBXGroup;
+			children = (
+				97FAF4A42A4DED680025CAC7 /* RecordRoomTests.swift */,
+			);
+			path = RecordRoomTests;
+			sourceTree = "<group>";
+		};
+		97FAF4AD2A4DED680025CAC7 /* RecordRoomUITests */ = {
+			isa = PBXGroup;
+			children = (
+				97FAF4AE2A4DED680025CAC7 /* RecordRoomUITests.swift */,
+				97FAF4B02A4DED680025CAC7 /* RecordRoomUITestsLaunchTests.swift */,
+			);
+			path = RecordRoomUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		97FAF48F2A4DED650025CAC7 /* RecordRoom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97FAF4B42A4DED680025CAC7 /* Build configuration list for PBXNativeTarget "RecordRoom" */;
+			buildPhases = (
+				97FAF48C2A4DED650025CAC7 /* Sources */,
+				97FAF48D2A4DED650025CAC7 /* Frameworks */,
+				97FAF48E2A4DED650025CAC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RecordRoom;
+			productName = RecordRoom;
+			productReference = 97FAF4902A4DED650025CAC7 /* RecordRoom.app */;
+			productType = "com.apple.product-type.application";
+		};
+		97FAF49F2A4DED680025CAC7 /* RecordRoomTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97FAF4B72A4DED680025CAC7 /* Build configuration list for PBXNativeTarget "RecordRoomTests" */;
+			buildPhases = (
+				97FAF49C2A4DED680025CAC7 /* Sources */,
+				97FAF49D2A4DED680025CAC7 /* Frameworks */,
+				97FAF49E2A4DED680025CAC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97FAF4A22A4DED680025CAC7 /* PBXTargetDependency */,
+			);
+			name = RecordRoomTests;
+			productName = RecordRoomTests;
+			productReference = 97FAF4A02A4DED680025CAC7 /* RecordRoomTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		97FAF4A92A4DED680025CAC7 /* RecordRoomUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97FAF4BA2A4DED680025CAC7 /* Build configuration list for PBXNativeTarget "RecordRoomUITests" */;
+			buildPhases = (
+				97FAF4A62A4DED680025CAC7 /* Sources */,
+				97FAF4A72A4DED680025CAC7 /* Frameworks */,
+				97FAF4A82A4DED680025CAC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97FAF4AC2A4DED680025CAC7 /* PBXTargetDependency */,
+			);
+			name = RecordRoomUITests;
+			productName = RecordRoomUITests;
+			productReference = 97FAF4AA2A4DED680025CAC7 /* RecordRoomUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97FAF4882A4DED650025CAC7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					97FAF48F2A4DED650025CAC7 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					97FAF49F2A4DED680025CAC7 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 97FAF48F2A4DED650025CAC7;
+					};
+					97FAF4A92A4DED680025CAC7 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 97FAF48F2A4DED650025CAC7;
+					};
+				};
+			};
+			buildConfigurationList = 97FAF48B2A4DED650025CAC7 /* Build configuration list for PBXProject "RecordRoom" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 97FAF4872A4DED650025CAC7;
+			productRefGroup = 97FAF4912A4DED650025CAC7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97FAF48F2A4DED650025CAC7 /* RecordRoom */,
+				97FAF49F2A4DED680025CAC7 /* RecordRoomTests */,
+				97FAF4A92A4DED680025CAC7 /* RecordRoomUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97FAF48E2A4DED650025CAC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97FAF49B2A4DED680025CAC7 /* Preview Assets.xcassets in Resources */,
+				97FAF4982A4DED680025CAC7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97FAF49E2A4DED680025CAC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97FAF4A82A4DED680025CAC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97FAF48C2A4DED650025CAC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97FAF4962A4DED650025CAC7 /* ContentView.swift in Sources */,
+				97FAF4942A4DED650025CAC7 /* RecordRoomApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97FAF49C2A4DED680025CAC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97FAF4A52A4DED680025CAC7 /* RecordRoomTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97FAF4A62A4DED680025CAC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97FAF4B12A4DED680025CAC7 /* RecordRoomUITestsLaunchTests.swift in Sources */,
+				97FAF4AF2A4DED680025CAC7 /* RecordRoomUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		97FAF4A22A4DED680025CAC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97FAF48F2A4DED650025CAC7 /* RecordRoom */;
+			targetProxy = 97FAF4A12A4DED680025CAC7 /* PBXContainerItemProxy */;
+		};
+		97FAF4AC2A4DED680025CAC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97FAF48F2A4DED650025CAC7 /* RecordRoom */;
+			targetProxy = 97FAF4AB2A4DED680025CAC7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		97FAF4B22A4DED680025CAC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		97FAF4B32A4DED680025CAC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		97FAF4B52A4DED680025CAC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RecordRoom/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = example.com.RecordRoom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		97FAF4B62A4DED680025CAC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RecordRoom/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = example.com.RecordRoom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		97FAF4B82A4DED680025CAC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = example.com.RecordRoomTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecordRoom.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RecordRoom";
+			};
+			name = Debug;
+		};
+		97FAF4B92A4DED680025CAC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = example.com.RecordRoomTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecordRoom.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RecordRoom";
+			};
+			name = Release;
+		};
+		97FAF4BB2A4DED680025CAC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = example.com.RecordRoomUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RecordRoom;
+			};
+			name = Debug;
+		};
+		97FAF4BC2A4DED680025CAC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = example.com.RecordRoomUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RecordRoom;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		97FAF48B2A4DED650025CAC7 /* Build configuration list for PBXProject "RecordRoom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97FAF4B22A4DED680025CAC7 /* Debug */,
+				97FAF4B32A4DED680025CAC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97FAF4B42A4DED680025CAC7 /* Build configuration list for PBXNativeTarget "RecordRoom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97FAF4B52A4DED680025CAC7 /* Debug */,
+				97FAF4B62A4DED680025CAC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97FAF4B72A4DED680025CAC7 /* Build configuration list for PBXNativeTarget "RecordRoomTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97FAF4B82A4DED680025CAC7 /* Debug */,
+				97FAF4B92A4DED680025CAC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97FAF4BA2A4DED680025CAC7 /* Build configuration list for PBXNativeTarget "RecordRoomUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97FAF4BB2A4DED680025CAC7 /* Debug */,
+				97FAF4BC2A4DED680025CAC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 97FAF4882A4DED650025CAC7 /* Project object */;
+}
