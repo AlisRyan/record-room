@@ -14,23 +14,28 @@ struct ContentView: View {
     @State private var searchResults: [Album] = []
     @State private var showDetailView: Bool = false
     @State private var selectedAlbum: Album?
+  var vm : CoreDataViewModel
+  var svm : SearchViewModel
+  init(vm: CoreDataViewModel, svm: SearchViewModel) {
+    self.vm = vm
+    self.svm = svm
+
+  }
 
   var body: some View {
-//    TabView {
-//      HomeView()
-//        .tabItem {
-//          Image(systemName: "house")
-//          Text("Home")
-//        }
       NavigationView {
         VStack {
-          if !authKey.isEmpty {
-            SearchView(searchText: $searchText, searchResults: $searchResults, authKey: authKey)
-              .padding(.horizontal)
-          }
 
+          VStack(alignment: .leading) {
+              TextField("Search", text: $searchText)
+                  .textFieldStyle(RoundedBorderTextFieldStyle())
+                  .padding()
+                  .onChange(of: searchText) { text in
+                      searchAlbums()
+                  }
+          }
           List(searchResults, id: \.id) { album in
-            NavigationLink(destination: AlbumDetailView(album: album, authKey: authKey)) {
+            NavigationLink(destination: AlbumDetailView(vm: vm, album: album)) {
               HStack(spacing: 16) {
                 AsyncImage(url: URL(string: album.images[0].url)) { image in
                   image.resizable()
@@ -56,12 +61,18 @@ struct ContentView: View {
           .padding(.horizontal)
         }
         .onAppear {
-          fetchAuthenticationKey()
+            svm.fetchAuthenticationKey { key in
+                if let key = key {
+                    DispatchQueue.main.async {
+                        svm.authKey = key
+                    }
+                }
+            }
         }
         .navigationTitle("Albums")
         .toolbar {
                         ToolbarItem(placement: .navigationBarTrailing) {
-                            NavigationLink(destination: HomeView()) {
+                          NavigationLink(destination: HomeView(vm: vm, svm: svm)) {
                                 Image(systemName: "house")
                                     .imageScale(.large)
                             }
@@ -69,39 +80,16 @@ struct ContentView: View {
                     }
       }
     }
-
-    func fetchAuthenticationKey() {
-        guard let url = URL(string: "https://accounts.spotify.com/api/token") else {
-            return
-        }
-
-        var request = URLRequest(url: url)
-        request.httpMethod = "POST"
-
-      let clientId = Sensitive.clientID
-      let clientSecret = Sensitive.clientSecret
-        let basicAuthHeader = "\(clientId):\(clientSecret)".data(using: .utf8)?.base64EncodedString() ?? ""
-
-        request.setValue("Basic \(basicAuthHeader)", forHTTPHeaderField: "Authorization")
-        request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
-        request.httpBody = "grant_type=client_credentials".data(using: .utf8)
-
-        URLSession.shared.dataTask(with: request) { data, response, error in
-            guard let data = data else {
-                return
-            }
-
-            if let authResponse = try? JSONDecoder().decode(AuthResponse.self, from: data) {
-                DispatchQueue.main.async {
-                    self.authKey = authResponse.access_token
-                }
-            }
-        }.resume()
-    }
+  private func searchAlbums() {
+      svm.searchAlbums(searchText: searchText) { albums in
+          self.searchResults = albums
+      }
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+      let svm = SearchViewModel()
+      ContentView(vm: CoreDataViewModel(svm: svm), svm: svm)
     }
 }

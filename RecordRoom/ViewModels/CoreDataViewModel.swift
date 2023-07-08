@@ -37,72 +37,43 @@ class CoreDataManager {
   }
 }
 
-class CoreDataViewModel: ObservableObject {
-  let manager = CoreDataManager.instance
-  @Published var albums: [AlbumEntity] = []
-
-  init() {
-    getAlbums()
-  }
-
-  func getAlbums() {
-    let request =  NSFetchRequest<AlbumEntity>(entityName: "AlbumEntity")
-    do {
-      albums = try manager.context.fetch(request)
-    } catch let error {
-      print("Error fetching")
-    }
-  }
-
-  func addAlbum() {
-    let newAlbum = AlbumEntity(context: manager.context)
-    newAlbum.name = "Reality"
-    save()
-  }
-
-  func save() {
-    print("saved successfully")
-    manager.save()
-  }
-}
-
-struct SampleView: View {
-  @StateObject var vm = CoreDataViewModel()
-  var body: some View {
-    NavigationView {
-      ScrollView {
-        VStack(spacing: 20) {
-          Button(action: {
-            vm.addAlbum()
-          }, label: {
-            Text("Action")
-              .foregroundColor(.white)
-              .frame(height: 55)
-              .frame(maxWidth: .infinity)
-              .background(Color.blue.cornerRadius(10))
-          })
-
-          ScrollView(.horizontal, showsIndicators: true, content: {
-            HStack(alignment: .top) {
-              ForEach(vm.albums) {
-                album in
-                AlbumView(entity: album)
-              }
-            }
-          })
-        }
-        .padding()
-      }
-      .navigationTitle("Relationships")
-    }
-  }
-}
-
-struct SampleView_Previews: PreviewProvider {
-  static var previews: some View {
-    SampleView()
-  }
-}
+//struct SampleView: View {
+//  @StateObject var vm = CoreDataViewModel()
+//  var body: some View {
+//    NavigationView {
+//      ScrollView {
+//        VStack(spacing: 20) {
+//          Button(action: {
+//            vm.addAlbum()
+//          }, label: {
+//            Text("Action")
+//              .foregroundColor(.white)
+//              .frame(height: 55)
+//              .frame(maxWidth: .infinity)
+//              .background(Color.blue.cornerRadius(10))
+//          })
+//
+//          ScrollView(.horizontal, showsIndicators: true, content: {
+//            HStack(alignment: .top) {
+//              ForEach(vm.albums) {
+//                album in
+//                AlbumView(entity: album)
+//              }
+//            }
+//          })
+//        }
+//        .padding()
+//      }
+//      .navigationTitle("Relationships")
+//    }
+//  }
+//}
+//
+//struct SampleView_Previews: PreviewProvider {
+//  static var previews: some View {
+//    SampleView()
+//  }
+//}
 
 
 struct AlbumView: View {

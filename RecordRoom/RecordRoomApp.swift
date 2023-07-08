@@ -10,8 +10,10 @@ import SwiftUI
 @main
 struct RecordRoomApp: App {
     var body: some Scene {
+      let svm = SearchViewModel()
+      let vm = CoreDataViewModel(svm: svm)
         WindowGroup {
-          ContentView()
+          ContentView(vm: vm, svm: svm)
 //          SampleView()
         }
     }

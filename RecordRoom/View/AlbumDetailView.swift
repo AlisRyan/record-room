@@ -76,10 +76,18 @@
 import SwiftUI
 
 struct AlbumDetailView: View {
-    let album: Album
-    let authKey: String
-
+  let album: Album
+  var vm: CoreDataViewModel
   @State private var rating: Double = 0.0
+
+  init(vm: CoreDataViewModel, album: Album) {
+      self.vm = vm
+      self.album = album
+      // Fetch the rating from Core Data for the album
+      self._rating = State(initialValue: vm.getRating(for: album))
+  }
+
+//  @State private var rating: Double = 0.0
 
   var body: some View {
           ZStack {
@@ -105,9 +113,9 @@ struct AlbumDetailView: View {
                       .font(.headline)
                       .padding(.top, 16)
 
-                  RatingView(rating: $rating)
-                      .font(.largeTitle)
-                      .padding(.bottom, 24)
+                RatingView(rating: $rating, vm: vm, album: album)
+                    .font(.largeTitle)
+                    .padding(.bottom, 24)
               }
               .padding()
           }
@@ -117,6 +125,8 @@ struct AlbumDetailView: View {
 
 struct RatingView: View {
     @Binding var rating: Double
+    var vm: CoreDataViewModel
+    var album: Album
 
     var body: some View {
         HStack(spacing: 12) {
@@ -128,6 +138,9 @@ struct RatingView: View {
                     } else {
                         rating = starValue - 0.5
                     }
+
+                    // Save the rated album to Core Data
+                    vm.addAlbumWithRating(album: album, rating: rating)
                 }) {
                     Image(systemName: imageName(for: index))
                         .resizable()
@@ -135,6 +148,10 @@ struct RatingView: View {
                         .foregroundColor(.yellow)
                 }
             }
+        }
+        .onAppear {
+            // Fetch the rating from Core Data when the view appears
+            rating = vm.getRating(for: album)
         }
     }
 
